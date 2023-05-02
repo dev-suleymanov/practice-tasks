@@ -7,9 +7,8 @@ import java.util.Set;
 public class Firewall {
     public static String checkName(String s, Set<String> words) {
         String result = "Вы сделали правильный выбор!";
-        String[] temp = s.split(" ");
-        for (String el : temp) {
-            if (words.contains(el)) {
+        for (String el : words) {
+            if (s.contains(el)) {
                 result = "Выберите другую статью...";
                 break;
             }
