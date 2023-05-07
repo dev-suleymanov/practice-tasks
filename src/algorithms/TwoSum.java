@@ -2,7 +2,6 @@ package algorithms;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        int[] result = new int[2];
         int firstPos = 0;
         int secondPos = 1;
         while (nums[firstPos] + nums[secondPos] != target) {
@@ -13,9 +12,10 @@ public class TwoSum {
                 secondPos++;
             }
         }
-        result[0] = firstPos;
-        result[1] = secondPos;
-        return result;
+        nums = new int[2];
+        nums[0] = firstPos;
+        nums[1] = secondPos;
+        return nums;
     }
 
     public static void main(String[] args) {
