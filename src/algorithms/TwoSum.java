@@ -15,9 +15,6 @@ public class TwoSum {
         nums = new int[2];
         nums[0] = firstPos;
         nums[1] = secondPos;
-        for (int i = 0; i < nums.length; i++) {
-
-        }
         return nums;
     }
 
