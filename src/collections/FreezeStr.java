@@ -7,6 +7,7 @@ public class FreezeStr {
     public static boolean eq(String left, String right) {
         List<Character> leftList = new ArrayList<>(left.chars()
                 .mapToObj(c -> (Character) (char) c)
+                .sorted()
                 .toList());
         List<Character> rightList = new ArrayList<>(right.chars()
                 .mapToObj(c -> (Character) (char) c)
