@@ -14,9 +14,9 @@ public class Task1 {
     }
 
     public static void main(String[] args) {
-        int array[] = {0, 1, 2, 2, 3, 0, 4, 2};
-        removeElement(array, 2);
-        Arrays.stream(array).boxed()
+        int[] array= {0, 1, 2, 2, 3, 0, 4, 2};
+        int [] result = removeElement(array, 2);
+        Arrays.stream(result)
                 .forEach(System.out::println);
     }
 }
